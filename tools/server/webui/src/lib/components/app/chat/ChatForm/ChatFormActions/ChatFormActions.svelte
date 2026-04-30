@@ -187,33 +187,6 @@
 
 <div class="flex w-full items-center gap-3 {className}" style="container-type: inline-size">
 	<div class="mr-auto flex items-center gap-2">
-		{#if isMobile.current}
-			<ChatFormActionAttachmentsSheet
-				{disabled}
-				{hasAudioModality}
-				{hasVisionModality}
-				{hasMcpPromptsSupport}
-				{hasMcpResourcesSupport}
-				{onFileUpload}
-				{onSystemPromptClick}
-				{onMcpPromptClick}
-				onMcpSettingsClick={() => goto('#/settings/mcp')}
-				{onMcpResourcesClick}
-			/>
-		{:else}
-			<ChatFormActionAttachmentsDropdown
-				{disabled}
-				{hasAudioModality}
-				{hasVisionModality}
-				{hasMcpPromptsSupport}
-				{hasMcpResourcesSupport}
-				{onFileUpload}
-				{onSystemPromptClick}
-				{onMcpPromptClick}
-				{onMcpResourcesClick}
-				onMcpSettingsClick={() => goto('#/settings/mcp')}
-			/>
-		{/if}
 	</div>
 
 	<div class="ml-auto flex items-center gap-2">
