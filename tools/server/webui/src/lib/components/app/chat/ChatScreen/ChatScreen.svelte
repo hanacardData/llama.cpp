@@ -356,13 +356,8 @@
 {:else}
 	<div
 		bind:this={chatScrollContainer}
-		aria-label="Chat interface with file drop zone"
+		aria-label="Chat interface"
 		class="flex h-full flex-col-reverse overflow-y-auto px-4 md:px-6"
-		ondragenter={handleDragEnter}
-		ondragleave={handleDragLeave}
-		ondragover={handleDragOver}
-		ondrop={handleDrop}
-		onscroll={handleScroll}
 		role="main"
 	>
 		<div class="flex grow flex-col pt-14">
@@ -383,12 +378,10 @@
 			>
 				{#if isEmpty}
 					<div class="mb-8 px-4 text-center" use:fadeInView={{ duration: 300 }}>
-						<h1 class="mb-2 text-2xl font-semibold tracking-tight md:text-3xl">Hello there</h1>
+						<h1 class="mb-2 text-2xl font-semibold tracking-tight md:text-3xl">하나카드 AI Assistant Ellie</h1>
 
 						<p class="text-muted-foreground md:text-lg">
-							{serverStore.props?.modalities?.audio
-								? 'Record audio, type a message '
-								: 'Type a message'} or upload files to get started
+							어떤 내용을 도와드릴까요?
 						</p>
 					</div>
 				{/if}

@@ -84,6 +84,7 @@
 	}
 </script>
 
+<<<<<<< HEAD
 <div
 	class="flex w-full items-center gap-3 {className} {showAddButton ? '' : 'justify-end'}"
 	style="container-type: inline-size"
@@ -104,6 +105,11 @@
 			/>
 		</div>
 	{/if}
+=======
+<div class="flex w-full items-center gap-3 {className}" style="container-type: inline-size">
+	<div class="mr-auto flex items-center gap-2">
+	</div>
+>>>>>>> bd48d288a (update ui)
 
 	{#if showModelSelector}
 		<ChatFormActionModels

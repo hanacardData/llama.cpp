@@ -252,17 +252,6 @@
 	function handlePaste(event: ClipboardEvent) {
 		if (!event.clipboardData) return;
 
-		const files = Array.from(event.clipboardData.items)
-			.filter((item) => item.kind === 'file')
-			.map((item) => item.getAsFile())
-			.filter((file): file is File => file !== null);
-
-		if (files.length > 0) {
-			event.preventDefault();
-			onFilesAdd?.(files);
-			return;
-		}
-
 		const text = event.clipboardData.getData(MimeTypeText.PLAIN);
 
 		if (text.startsWith(CLIPBOARD_CONTENT_QUOTE_PREFIX)) {
@@ -464,8 +453,6 @@
 		}
 	}
 </script>
-
-<ChatFormFileInputInvisible bind:this={fileInputRef} onFileSelect={handleFileSelect} />
 
 <form
 	class="relative {className}"
