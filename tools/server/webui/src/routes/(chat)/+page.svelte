@@ -93,7 +93,7 @@
 </script>
 
 <svelte:head>
-	<title>{APP_NAME}</title>
+	<title>AI Assistant Ellie</title>
 </svelte:head>
 
 <DialogModelNotAvailable
