@@ -84,32 +84,8 @@
 	}
 </script>
 
-<<<<<<< HEAD
-<div
-	class="flex w-full items-center gap-3 {className} {showAddButton ? '' : 'justify-end'}"
-	style="container-type: inline-size"
->
-	{#if showAddButton}
-		<div class="mr-auto flex items-center gap-2">
-			<ChatFormActionsAdd
-				{disabled}
-				{hasAudioModality}
-				{hasVisionModality}
-				{hasMcpPromptsSupport}
-				{hasMcpResourcesSupport}
-				{onFileUpload}
-				{onSystemPromptClick}
-				{onMcpPromptClick}
-				{onMcpResourcesClick}
-				onMcpSettingsClick={() => goto('#/settings/mcp')}
-			/>
-		</div>
-	{/if}
-=======
 <div class="flex w-full items-center gap-3 {className}" style="container-type: inline-size">
-	<div class="mr-auto flex items-center gap-2">
-	</div>
->>>>>>> bd48d288a (update ui)
+	<div class="mr-auto flex items-center gap-2"></div>
 
 	{#if showModelSelector}
 		<ChatFormActionModels
