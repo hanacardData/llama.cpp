@@ -85,12 +85,7 @@
 </script>
 
 <div class="flex w-full items-center gap-3 {className}" style="container-type: inline-size">
-<<<<<<< HEAD
 	<div class="mr-auto flex items-center gap-2"></div>
-=======
-	<div class="mr-auto flex items-center gap-2">
-	</div>
->>>>>>> ab62644a68ee6e07c7fc3b850f88b50445992dc9
 
 	{#if showModelSelector}
 		<ChatFormActionModels
