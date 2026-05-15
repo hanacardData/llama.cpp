@@ -79,7 +79,7 @@
 						onConfigChange(field.key, e.currentTarget.value);
 					}}
 					placeholder={sp[field.key] != null
-						? `Default: ${normalizeFloatingPoint(sp[field.key])}`
+						? `기본값: ${normalizeFloatingPoint(sp[field.key])}`
 						: ''}
 					class="w-full {isCustomRealTime ? 'pr-8' : ''}"
 				/>
@@ -91,8 +91,8 @@
 							onConfigChange(field.key, '');
 						}}
 						class="absolute top-1/2 right-2 inline-flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded transition-colors hover:bg-muted"
-						aria-label="Reset to default"
-						title="Reset to default"
+						aria-label="기본값으로 재설정"
+						title="기본값으로 재설정"
 					>
 						<RotateCcw class="h-3 w-3" />
 					</button>
@@ -135,7 +135,7 @@
 					/>
 
 					<Label for="showSystemMessage" class="cursor-pointer text-sm font-normal">
-						Show system message in conversations
+						대화에서 시스템 메시지 표시
 					</Label>
 				</div>
 			{/if}
@@ -184,7 +184,7 @@
 								<IconComponent class="h-4 w-4" />
 							{/if}
 
-							{selectedOption?.label || `Select ${field.label.toLowerCase()}`}
+							{selectedOption?.label || `${field.label} 선택`}
 						</div>
 					</Select.Trigger>
 					{#if isCustomRealTime}
@@ -195,8 +195,8 @@
 								onConfigChange(field.key, '');
 							}}
 							class="absolute top-1/2 right-8 inline-flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded transition-colors hover:bg-muted"
-							aria-label="Reset to default"
-							title="Reset to default"
+							aria-label="기본값으로 재설정"
+							title="기본값으로 재설정"
 						>
 							<RotateCcw class="h-3 w-3" />
 						</button>

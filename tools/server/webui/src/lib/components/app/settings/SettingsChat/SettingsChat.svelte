@@ -61,7 +61,7 @@
 			try {
 				JSON.parse(localConfig.custom);
 			} catch (error) {
-				alert('Invalid JSON in custom parameters. Please check the format and try again.');
+				alert('사용자 정의 매개변수에 유효하지 않은 JSON이 있습니다. 형식을 확인하고 다시 시도해 주세요.');
 				console.error(error);
 				return;
 			}
@@ -79,7 +79,7 @@
 						processedConfig[field] = numValue;
 					}
 				} else {
-					alert(`Invalid numeric value for ${field}. Please enter a valid number.`);
+					alert(`${field}의 값이 유효한 숫자가 아닙니다. 올바른 숫자를 입력해 주세요.`);
 					return;
 				}
 			}
@@ -145,7 +145,7 @@
 				</div>
 
 				<div class="mt-8 border-t border-border/30 pt-6">
-					<p class="text-xs text-muted-foreground">Settings are saved in browser's localStorage</p>
+					<p class="text-xs text-muted-foreground">설정은 브라우저의 localStorage에 저장됩니다</p>
 				</div>
 			</div>
 
